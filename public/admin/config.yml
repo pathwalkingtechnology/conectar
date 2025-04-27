@@ -1,0 +1,16 @@
+backend:
+  name: github
+  repo: https://github.com/pathwalkingtechnology/conectar
+  branch: main
+media_folder: public/images/uploads
+collections:
+  - name: "properties"
+    label: "Propiedades"
+    folder: "src/data/properties"
+    create: true
+    fields:
+      - { name: "title", label: "Título", widget: "string" }
+      - { name: "price", label: "Precio", widget: "number" }
+      - { name: "image", label: "Imagen", widget: "image" }
+      - { name: "description", label: "Descripción", widget: "markdown" }
+      - { name: "amenities", label: "Comodidades", widget: "list" }
